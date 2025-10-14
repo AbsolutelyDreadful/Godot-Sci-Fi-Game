@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=4 uid="uid://bwy1fvofhm6jd"]
+[gd_scene load_steps=5 format=4 uid="uid://c6fm1oov6av4o"]
 
 [ext_resource type="Texture2D" uid="uid://25c3ppso464h" path="res://Assets/Placeholder_Tiles.png" id="1_ycph5"]
 [ext_resource type="PackedScene" uid="uid://du1hhn2yrcgs8" path="res://Scenes/player.tscn" id="2_6idp7"]
@@ -18,4 +18,4 @@ tile_map_data = PackedByteArray("AAD/////AAAAAAAAAAD+////AAAAAAAAAAD9////AAAAAAA
 tile_set = SubResource("TileSet_rx0dc")
 
 [node name="Player" parent="." instance=ExtResource("2_6idp7")]
-position = Vector2(0, -25)
+position = Vector2(-1, -11)
