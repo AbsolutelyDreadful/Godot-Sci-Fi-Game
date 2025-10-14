@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=4 uid="uid://bwy1fvofhm6jd"]
+
+[ext_resource type="Texture2D" uid="uid://25c3ppso464h" path="res://Assets/Placeholder_Tiles.png" id="1_ycph5"]
+[ext_resource type="PackedScene" uid="uid://du1hhn2yrcgs8" path="res://Scenes/player.tscn" id="2_6idp7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6idp7"]
+texture = ExtResource("1_ycph5")
+0:0/0 = 0
+1:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_rx0dc"]
+sources/0 = SubResource("TileSetAtlasSource_6idp7")
+
+[node name="Test Room" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD/////AAAAAAAAAAD+////AAAAAAAAAAD9////AAAAAAAAAAD8////AAAAAAAAAAD7////AAAAAAAAAAAAAP//AAAAAAAAAAABAP//AAAAAAAAAAACAP//AAAAAAAAAAADAP//AAAAAAAAAAAEAP//AAAAAAAAAAAFAP//AAAAAAAAAAAGAP//AAAAAAAAAAD6////AAAAAAAAAAD5////AAAAAAAAAAD5//7/AAABAAAAAAD5//3/AAABAAAAAAD5//z/AAABAAAAAAD5//v/AAABAAAAAAD5//r/AAABAAAAAAD5//n/AAABAAAAAAD5//j/AAABAAAAAAA=")
+tile_set = SubResource("TileSet_rx0dc")
+
+[node name="Player" parent="." instance=ExtResource("2_6idp7")]
+position = Vector2(0, -25)

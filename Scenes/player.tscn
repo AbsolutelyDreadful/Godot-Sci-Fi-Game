@@ -1,15 +1,34 @@
-[gd_scene load_steps=3 format=3 uid="uid://du1hhn2yrcgs8"]
+[gd_scene load_steps=5 format=3 uid="uid://du1hhn2yrcgs8"]
+
+[ext_resource type="Texture2D" uid="uid://c1f3bakdmpxwd" path="res://Assets/Placeholder_PC.png" id="1_v0iea"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvnsp"]
+atlas = ExtResource("1_v0iea")
+region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_186t8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvnsp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f50pn"]
+radius = 6.0
 
 [node name="Player" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -4)
+scale = Vector2(2.3125, 2.3125)
 sprite_frames = SubResource("SpriteFrames_186t8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 0)
 shape = SubResource("CapsuleShape2D_f50pn")
 
 [node name="Camera2D" type="Camera2D" parent="."]
