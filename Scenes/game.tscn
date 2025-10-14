@@ -1,9 +1,9 @@
 [gd_scene load_steps=4 format=4 uid="uid://c4vky2d1cbj6h"]
 
-[ext_resource type="Texture2D" uid="uid://25c3ppso464h" path="res://Assets/Placeholder_Tiles.png" id="1_80nbo"]
+[ext_resource type="Texture2D" uid="uid://25c3ppso464h" path="res://Assets/Placeholder_Tiles.png" id="1_ebmjs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2o6t"]
-texture = ExtResource("1_80nbo")
+texture = ExtResource("1_ebmjs")
 use_texture_padding = false
 0:0/0 = 0
 1:0/0 = 0
